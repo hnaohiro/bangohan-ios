@@ -41,7 +41,7 @@
     hud.labelText = @"Processing...";
     [hud show:YES];
  
-    NSString* url = [[NSString alloc]initWithFormat:@"http://bangohan.herokuapp.com/users/%ld.json", [self getUserId]];
+    NSString* url = [[NSString alloc]initWithFormat:@"http://bangohan.herokuapp.com/users/%d.json", [self getUserId]];
     NSDictionary* param;
     
     if ([self.need selectedSegmentIndex] == 0) {
