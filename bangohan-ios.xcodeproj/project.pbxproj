@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		931E878B1A014C39B3ED9C8E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF10B97A6767419EB192D939 /* libPods.a */; };
 		F5973C8A193A305C00768E38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5973C89193A305C00768E38 /* Foundation.framework */; };
 		F5973C8C193A305C00768E38 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5973C8B193A305C00768E38 /* CoreGraphics.framework */; };
 		F5973C8E193A305C00768E38 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5973C8D193A305C00768E38 /* UIKit.framework */; };
@@ -14,14 +15,15 @@
 		F5973C96193A305C00768E38 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5973C95193A305C00768E38 /* main.m */; };
 		F5973C9A193A305C00768E38 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5973C99193A305C00768E38 /* AppDelegate.m */; };
 		F5973C9D193A305C00768E38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5973C9B193A305C00768E38 /* Main.storyboard */; };
-		F5973CA0193A305C00768E38 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5973C9F193A305C00768E38 /* FirstViewController.m */; };
-		F5973CA3193A305C00768E38 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5973CA2193A305C00768E38 /* SecondViewController.m */; };
-		F5973CA5193A305C00768E38 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5973CA4193A305C00768E38 /* Images.xcassets */; };
 		F5973CAC193A305C00768E38 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5973CAB193A305C00768E38 /* XCTest.framework */; };
 		F5973CAD193A305C00768E38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5973C89193A305C00768E38 /* Foundation.framework */; };
 		F5973CAE193A305C00768E38 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5973C8D193A305C00768E38 /* UIKit.framework */; };
 		F5973CB6193A305C00768E38 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F5973CB4193A305C00768E38 /* InfoPlist.strings */; };
 		F5973CB8193A305C00768E38 /* bangohan_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5973CB7193A305C00768E38 /* bangohan_iosTests.m */; };
+		F5973CCC193A3F7B00768E38 /* ConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5973CCB193A3F7B00768E38 /* ConfigViewController.m */; };
+		F5973CD0193A427400768E38 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5973CCF193A427400768E38 /* Images.xcassets */; };
+		F5973CD3193AC7BC00768E38 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5973CD2193AC7BC00768E38 /* EditViewController.m */; };
+		F5973CD6193AC89D00768E38 /* ListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5973CD5193AC89D00768E38 /* ListTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F5973C86193A305C00768E38 /* bangohan-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bangohan-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		06CCBB30CBED482992273149 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		AF10B97A6767419EB192D939 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5973C86193A305C00768E38 /* bangohan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bangohan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5973C89193A305C00768E38 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F5973C8B193A305C00768E38 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		F5973C8D193A305C00768E38 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -46,16 +50,18 @@
 		F5973C98193A305C00768E38 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F5973C99193A305C00768E38 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F5973C9C193A305C00768E38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F5973C9E193A305C00768E38 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		F5973C9F193A305C00768E38 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		F5973CA1193A305C00768E38 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		F5973CA2193A305C00768E38 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		F5973CA4193A305C00768E38 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F5973CAA193A305C00768E38 /* bangohan-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "bangohan-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5973CAB193A305C00768E38 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		F5973CB3193A305C00768E38 /* bangohan-iosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "bangohan-iosTests-Info.plist"; sourceTree = "<group>"; };
 		F5973CB5193A305C00768E38 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F5973CB7193A305C00768E38 /* bangohan_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bangohan_iosTests.m; sourceTree = "<group>"; };
+		F5973CCA193A3F7B00768E38 /* ConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigViewController.h; sourceTree = "<group>"; };
+		F5973CCB193A3F7B00768E38 /* ConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigViewController.m; sourceTree = "<group>"; };
+		F5973CCF193A427400768E38 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F5973CD1193AC7BC00768E38 /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
+		F5973CD2193AC7BC00768E38 /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
+		F5973CD4193AC89D00768E38 /* ListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListTableViewController.h; sourceTree = "<group>"; };
+		F5973CD5193AC89D00768E38 /* ListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,7 @@
 				F5973C8C193A305C00768E38 /* CoreGraphics.framework in Frameworks */,
 				F5973C8E193A305C00768E38 /* UIKit.framework in Frameworks */,
 				F5973C8A193A305C00768E38 /* Foundation.framework in Frameworks */,
+				931E878B1A014C39B3ED9C8E /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,13 +96,14 @@
 				F5973CB1193A305C00768E38 /* bangohan-iosTests */,
 				F5973C88193A305C00768E38 /* Frameworks */,
 				F5973C87193A305C00768E38 /* Products */,
+				06CCBB30CBED482992273149 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
 		F5973C87193A305C00768E38 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F5973C86193A305C00768E38 /* bangohan-ios.app */,
+				F5973C86193A305C00768E38 /* bangohan.app */,
 				F5973CAA193A305C00768E38 /* bangohan-iosTests.xctest */,
 			);
 			name = Products;
@@ -108,6 +116,7 @@
 				F5973C8B193A305C00768E38 /* CoreGraphics.framework */,
 				F5973C8D193A305C00768E38 /* UIKit.framework */,
 				F5973CAB193A305C00768E38 /* XCTest.framework */,
+				AF10B97A6767419EB192D939 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -115,15 +124,17 @@
 		F5973C8F193A305C00768E38 /* bangohan-ios */ = {
 			isa = PBXGroup;
 			children = (
+				F5973CCF193A427400768E38 /* Images.xcassets */,
 				F5973C98193A305C00768E38 /* AppDelegate.h */,
 				F5973C99193A305C00768E38 /* AppDelegate.m */,
+				F5973CD4193AC89D00768E38 /* ListTableViewController.h */,
+				F5973CD5193AC89D00768E38 /* ListTableViewController.m */,
 				F5973C9B193A305C00768E38 /* Main.storyboard */,
-				F5973C9E193A305C00768E38 /* FirstViewController.h */,
-				F5973C9F193A305C00768E38 /* FirstViewController.m */,
-				F5973CA1193A305C00768E38 /* SecondViewController.h */,
-				F5973CA2193A305C00768E38 /* SecondViewController.m */,
-				F5973CA4193A305C00768E38 /* Images.xcassets */,
 				F5973C90193A305C00768E38 /* Supporting Files */,
+				F5973CCA193A3F7B00768E38 /* ConfigViewController.h */,
+				F5973CCB193A3F7B00768E38 /* ConfigViewController.m */,
+				F5973CD1193AC7BC00768E38 /* EditViewController.h */,
+				F5973CD2193AC7BC00768E38 /* EditViewController.m */,
 			);
 			path = "bangohan-ios";
 			sourceTree = "<group>";
@@ -164,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F5973CBB193A305C00768E38 /* Build configuration list for PBXNativeTarget "bangohan-ios" */;
 			buildPhases = (
+				B409171BB68D4F00ACCAA1DC /* Check Pods Manifest.lock */,
 				F5973C82193A305C00768E38 /* Sources */,
 				F5973C83193A305C00768E38 /* Frameworks */,
 				F5973C84193A305C00768E38 /* Resources */,
+				0D5872DAEF854AB0A5B82CBC /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -174,7 +187,7 @@
 			);
 			name = "bangohan-ios";
 			productName = "bangohan-ios";
-			productReference = F5973C86193A305C00768E38 /* bangohan-ios.app */;
+			productReference = F5973C86193A305C00768E38 /* bangohan.app */;
 			productType = "com.apple.product-type.application";
 		};
 		F5973CA9193A305C00768E38 /* bangohan-iosTests */ = {
@@ -204,6 +217,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = hnaohiro;
 				TargetAttributes = {
+					F5973C85193A305C00768E38 = {
+						DevelopmentTeam = 7283HB8YL3;
+					};
 					F5973CA9193A305C00768E38 = {
 						TestTargetID = F5973C85193A305C00768E38;
 					};
@@ -233,7 +249,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5973CA5193A305C00768E38 /* Images.xcassets in Resources */,
+				F5973CD0193A427400768E38 /* Images.xcassets in Resources */,
 				F5973C94193A305C00768E38 /* InfoPlist.strings in Resources */,
 				F5973C9D193A305C00768E38 /* Main.storyboard in Resources */,
 			);
@@ -249,15 +265,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0D5872DAEF854AB0A5B82CBC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B409171BB68D4F00ACCAA1DC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F5973C82193A305C00768E38 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5973CA3193A305C00768E38 /* SecondViewController.m in Sources */,
+				F5973CD3193AC7BC00768E38 /* EditViewController.m in Sources */,
+				F5973CCC193A3F7B00768E38 /* ConfigViewController.m in Sources */,
 				F5973C9A193A305C00768E38 /* AppDelegate.m in Sources */,
-				F5973CA0193A305C00768E38 /* FirstViewController.m in Sources */,
 				F5973C96193A305C00768E38 /* main.m in Sources */,
+				F5973CD6193AC89D00768E38 /* ListTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,26 +429,34 @@
 		};
 		F5973CBC193A305C00768E38 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06CCBB30CBED482992273149 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Naohiro Hasegawa (ZSHPLJF3KF)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Naohiro Hasegawa (ZSHPLJF3KF)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "bangohan-ios/bangohan-ios-Prefix.pch";
 				INFOPLIST_FILE = "bangohan-ios/bangohan-ios-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = bangohan;
+				PROVISIONING_PROFILE = "A054393F-A5C3-4059-8DFE-4438240F5CF7";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		F5973CBD193A305C00768E38 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06CCBB30CBED482992273149 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Naohiro Hasegawa (ZSHPLJF3KF)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Naohiro Hasegawa (ZSHPLJF3KF)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "bangohan-ios/bangohan-ios-Prefix.pch";
 				INFOPLIST_FILE = "bangohan-ios/bangohan-ios-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = bangohan;
+				PROVISIONING_PROFILE = "A054393F-A5C3-4059-8DFE-4438240F5CF7";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -462,6 +520,7 @@
 				F5973CBD193A305C00768E38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F5973CBE193A305C00768E38 /* Build configuration list for PBXNativeTarget "bangohan-iosTests" */ = {
 			isa = XCConfigurationList;
@@ -470,6 +529,7 @@
 				F5973CC0193A305C00768E38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

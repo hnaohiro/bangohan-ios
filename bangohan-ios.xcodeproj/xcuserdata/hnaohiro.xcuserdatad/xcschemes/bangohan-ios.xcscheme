@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F5973C85193A305C00768E38"
-               BuildableName = "bangohan-ios.app"
+               BuildableName = "bangohan.app"
                BlueprintName = "bangohan-ios"
                ReferencedContainer = "container:bangohan-ios.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F5973C85193A305C00768E38"
-            BuildableName = "bangohan-ios.app"
+            BuildableName = "bangohan.app"
             BlueprintName = "bangohan-ios"
             ReferencedContainer = "container:bangohan-ios.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F5973C85193A305C00768E38"
-            BuildableName = "bangohan-ios.app"
+            BuildableName = "bangohan.app"
             BlueprintName = "bangohan-ios"
             ReferencedContainer = "container:bangohan-ios.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F5973C85193A305C00768E38"
-            BuildableName = "bangohan-ios.app"
+            BuildableName = "bangohan.app"
             BlueprintName = "bangohan-ios"
             ReferencedContainer = "container:bangohan-ios.xcodeproj">
          </BuildableReference>
